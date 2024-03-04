@@ -39,13 +39,20 @@ const team = [
     },
 ];
 
+// creare i nodi della DOM nei quli inserire i componenti degli ogetti
+const rowElement = document.querySelector('.row') 
+
 // stampare su console le informazioni di nome, ruolo e la stringa della foto
 // ciclare nella stringa e selezionare gli elementi degli oggetti
 for (let i = 0; i < team.length; i++) {
     const member = team[i];
+    // riportarli in console con un console.log
     console.log(member.name, member.role, member.image);
-    
+
+    // stampare le stesse informazioni su DOM sottoforma di stringhe
+    const markup = `<div class="col">
+    <div class="card"><h3>${member.name}</h3><p>${member.role}</p><p>${member.image}</p></div></div>`
+
+    rowElement.insertAdjacentHTML('beforeend', markup)
+
 }
-// riportarli in console con un console.log
-// stampare le stesse informazioni su DOM sottoforma di stringhe
-// creare i nodi della DOM nei quli inserire i componenti degli ogetti
