@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container-sm {
+background-color: rgb(59, 60, 86);
+}
+
+.bg-card {
+    background-color: gray;
+}
+
+.main {
+    background-color: rgba(0, 0, 0, 0.784);
+}
+
+h1 {
+    text-align: center;
+    padding: 3rem;
+}
+

@@ -50,8 +50,8 @@ for (let i = 0; i < team.length; i++) {
     console.log(member.name, member.role, member.image);
 
     // stampare le stesse informazioni su DOM sottoforma di stringhe
-    const markup = `<div class="col">
-    <div class="card"><h3>${member.name}</h3><p>${member.role}</p><p>${member.image}</p></div></div>`
+    const markup = `<div class="col-12 col-md-6 col-lg-4">
+    <div class="card mt-5 text-bg-dark"><h3 class="pt-2 px-2">${member.name}</h3><p class="px-2">${member.role}</p><img class="p-2" src="./assets/img/${member.image}" alt=""></div></div>`
 
     rowElement.insertAdjacentHTML('beforeend', markup)
 
